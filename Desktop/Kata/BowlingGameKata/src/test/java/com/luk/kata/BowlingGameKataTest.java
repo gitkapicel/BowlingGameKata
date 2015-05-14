@@ -26,7 +26,7 @@ public class BowlingGameKataTest {
 	public void rollAFewTimes(Game game , int points)
 	{
 		for (int i =0; i<20; i++) {
-			game.roll(0);
+			game.roll(points);
 			
 		}
 	}
