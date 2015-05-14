@@ -15,6 +15,14 @@ public class BowlingGameKataTest {
 		assertThat(g.score(), is(0));
 	}
 	
+	
+	@Test
+ 	public void gameWith20Points() {
+		Game g = new Game();
+		rollAFewTimes(g,1);
+		assertThat(g.score(), is(20));
+	}
+	
 	public void rollAFewTimes(Game game , int points)
 	{
 		for (int i =0; i<20; i++) {
